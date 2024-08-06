@@ -1,6 +1,9 @@
+import Hero from '@/components/Hero';
 const Home = () => {
   return (
-    <main className=''></main>
+    <main className=''>
+      <Hero />
+    </main>
   );
 };
 
