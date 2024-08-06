@@ -24,22 +24,35 @@ const navLinks = [
 
 const Header = () => {
   return (
-    <header>
+    <header className='flex justify-between items-center'>
       <Link href={'/'} aria-label={'home'}>
         <Image src={logo} alt={'logo'} />
       </Link>
 
-      <nav>
-        <ul>
-          {navLinks.map((link, idx) => (
-            <li key={idx}>
-              <Link href={link.path} aria-label={link.title}>
-                {link.title}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      </nav>
+      <div className='flex items-center'>
+        <nav>
+          <ul className='flex gap-14'>
+            {navLinks.map((link, idx) => (
+              <li key={idx}>
+                <Link href={link.path} aria-label={link.title}>
+                  {link.title}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </nav>
+
+        <Link
+          className='border border-dark-blue rounded-md py-2 px-5 ml-14'
+          href={''}
+          aria-label='Sign up'
+        >
+          Sign up
+        </Link>
+        <Link className='ml-14' href={''} aria-label='toggle lang'>
+          EN
+        </Link>
+      </div>
     </header>
   );
 };
