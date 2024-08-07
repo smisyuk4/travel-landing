@@ -22,7 +22,7 @@ const RootLayout = ({
       <body className={`${inter.className} container mx-auto`}>
         <Header />
         <main className='relative overflow-hidden'>{children}</main>
-        <Footer />
+        {/*<Footer />*/}
       </body>
     </html>
   );
