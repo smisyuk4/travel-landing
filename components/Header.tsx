@@ -3,13 +3,13 @@ import Link from 'next/link';
 
 import NavLink from './NavLink';
 import logo from '@/assets/Logo.png';
-import arrowToBottom from '@/assets/icons/arrow-to-bottom.svg';
 import { navLinks } from '@/constants/links';
 import Burger from './Burger';
+import { ArrowToBottom } from '@/assets/icons';
 
 const Header = () => {
   return (
-    <header className="flex justify-between items-center mt-14 after:content-[''] after:bg-[url('../public/header-decore.svg')] after:block after:h-[700px] after:w-[700px] after:absolute after:top-0 after:right-0">
+    <header className="flex justify-between items-center mt-14 after:content-[''] after:bg-[url('../assets/header-decore.svg')] after:block after:h-[700px] after:w-[700px] after:absolute after:top-0 after:right-0">
       <Link href={'/'} aria-label={'home'}>
         <Image src={logo} alt={'logo'} priority />
       </Link>
@@ -38,7 +38,7 @@ const Header = () => {
         </Link>
         <Link className='flex gap-1 ml-14' href={''} aria-label='toggle lang'>
           EN
-          {/*<Image src={arrowToBottom.src} alt={'arrow to bottom'} priority />*/}
+          <ArrowToBottom className={'h-4 w-4 stroke-black'} />
         </Link>
       </div>
 
