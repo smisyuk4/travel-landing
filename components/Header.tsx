@@ -9,12 +9,12 @@ import { ArrowToBottom } from '@/assets/icons';
 
 const Header = () => {
   return (
-    <header className="flex justify-between items-center mt-14 after:content-[''] after:bg-[url('../assets/header-decore.svg')] after:block after:h-[700px] after:w-[700px] after:absolute after:top-0 after:right-0">
-      <Link href={'/'} aria-label={'home'}>
+    <header className="flex justify-between items-center mt-4 md:mt-14 after:content-[''] after:bg-[url('../assets/header-decore.svg')] after:block after:h-[700px] after:w-[700px] after:absolute after:top-0 after:right-0">
+      <Link className='z-40' href={'/'} aria-label={'home'}>
         <Image src={logo} alt={'logo'} priority />
       </Link>
 
-      <div className='flex items-center z-50'>
+      <div className='hidden md:flex items-center z-50'>
         <nav>
           <ul className='flex gap-14'>
             {navLinks.map((link, idx) => (

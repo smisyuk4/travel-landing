@@ -9,3 +9,9 @@ body {
   color: #14183e;
   background: #ffffff;
 }
+
+@layer components {
+  .btn-primary {
+    @apply hover:bg-red-600;
+  }
+}
