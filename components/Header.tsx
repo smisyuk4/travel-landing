@@ -5,7 +5,7 @@ import NavLink from './NavLink';
 import logo from '@/assets/Logo.png';
 import { navLinks } from '@/constants/links';
 import Burger from './Burger';
-import { ArrowToBottom } from '@/assets/icons';
+import { ArrowToBottomIcon } from '@/assets/icons';
 
 const Header = () => {
   return (
@@ -47,7 +47,7 @@ const Header = () => {
           aria-label='toggle lang'
         >
           EN
-          <ArrowToBottom className={'h-4 w-4 stroke-black'} />
+          <ArrowToBottomIcon className={'h-4 w-4 stroke-black'} />
         </Link>
       </div>
 

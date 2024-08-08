@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import playButton from '@/assets/icons/play-button.svg';
+import {PlayButtonIcon} from '@/assets/icons';
 
 export const Hero = ({}) => {
   return (
@@ -22,11 +22,11 @@ export const Hero = ({}) => {
         </button>
         <div className='flex items-center'>
           <button className='flex items-center justify-center h-[52px] w-[52px] rounded-full bg-brand-red mr-5'>
-            <Image
+            {/*<Image
               className='stroke-white'
-              src={playButton}
+              src={PlayButtonIcon}
               alt='play button'
-            />
+            />*/}
           </button>
           <p className='text-base text-[#686D77] font-medium'>Play Demo</p>
         </div>
