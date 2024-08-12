@@ -3,14 +3,14 @@ import { PlayButtonIcon } from '@/assets/icons';
 
 export const Hero = ({}) => {
   return (
-    <section className='custom-lg-height flex items-center'>
-      <div className='lg:w-[630px]'>
+    <section className='custom-lg-height flex w-full items-center justify-between'>
+      <div className='lg:w-[650px]'>
         <h2 className='font-bold text-brand-red lg:mb-[24px] lg:text-xl'>
           Best Destinations around the world
         </h2>
         <h1 className='relative font-bold leading-none text-dark-blue lg:mb-[30px] lg:text-[84px]'>
           Travel,
-          <span className="z-10 after:absolute after:right-0 after:top-[75px] after:-z-10 after:block after:h-[10px] after:w-[390px] after:bg-[url('../assets/hero-title-decore.svg')] after:content-['']">
+          <span className="z-10 after:absolute after:right-40 after:top-[75px] after:-z-10 after:block after:h-[10px] after:w-[270px] after:bg-[url('../assets/hero-title-decore.svg')] after:content-['']">
             enjoy
           </span>
           and live a new and full life
@@ -40,7 +40,7 @@ export const Hero = ({}) => {
         </div>
       </div>
 
-      <div className='bg-girl'>asd</div>
+      <div className="h-[80%] w-[40%] bg-[url('../assets/girl.png')] bg-contain bg-no-repeat"></div>
     </section>
   );
 };
