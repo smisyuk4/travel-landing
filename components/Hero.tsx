@@ -1,4 +1,3 @@
-import Image from 'next/image';
 import { PlayButtonIcon } from '@/assets/icons';
 
 export const Hero = ({}) => {

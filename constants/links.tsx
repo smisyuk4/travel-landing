@@ -1,4 +1,4 @@
-export const navLinks = [
+export const NAV_LINKS = [
   {
     title: 'Desitnations',
     path: 'desitnations',

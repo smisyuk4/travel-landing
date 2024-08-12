@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 import NavLink from './NavLink';
 import logo from '@/assets/Logo.png';
-import { navLinks } from '@/constants/links';
+import { NAV_LINKS } from '@/constants/links';
 import Burger from './Burger';
 import { ArrowToBottomIcon } from '@/assets/icons';
 
@@ -22,13 +22,9 @@ const Header = () => {
       <div className='z-50 hidden items-center md:flex'>
         <nav>
           <ul className='flex gap-7 lg:gap-14'>
-            {navLinks.map((link, idx) => (
+            {NAV_LINKS.map(({ path, title }, idx) => (
               <li key={idx}>
-                <NavLink
-                  path={link.path}
-                  label={link.title}
-                  title={link.title}
-                />
+                <NavLink path={path} label={title} title={title} />
               </li>
             ))}
           </ul>

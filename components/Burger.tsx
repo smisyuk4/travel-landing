@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 import { ArrowToBottomIcon, BurgerIcon, CrossIcon } from '@/assets/icons';
 import NavLink from './NavLink';
-import { navLinks } from '@/constants/links';
+import { NAV_LINKS } from '@/constants/links';
 
 const Burger = () => {
   const [isOpenMenu, setIsOpenMenu] = useState(false);
@@ -56,12 +56,12 @@ const Burger = () => {
       >
         <nav>
           <ul className='flex flex-col gap-6'>
-            {navLinks.map((link, idx) => (
+            {NAV_LINKS.map(({ path, title }, idx) => (
               <li key={idx}>
                 <NavLink
-                  path={link.path}
-                  label={link.title}
-                  title={link.title}
+                  path={path}
+                  label={title}
+                  title={title}
                   onClickFunc={() => setIsOpenMenu(prev => !prev)}
                 />
               </li>
