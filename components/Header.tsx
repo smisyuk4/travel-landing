@@ -9,7 +9,12 @@ import { ArrowToBottomIcon } from '@/assets/icons';
 
 const Header = () => {
   return (
-    <header className="mt-4 flex items-center justify-between after:absolute after:right-0 after:top-0 after:block after:h-[550px] after:w-[300px] after:bg-[url('../assets/header-decore.svg')] after:content-[''] sm:after:h-[700px] sm:after:w-[550px] md:mt-14 md:after:w-[700px]">
+    <header
+      className="mt-4 flex items-center justify-between after:absolute after:right-0 after:top-0
+        after:block after:h-[550px] after:w-[300px]
+        after:bg-[url('../assets/header-decore.svg')] after:content-['']
+        sm:after:h-[700px] sm:after:w-[550px] md:mt-14 md:after:w-[700px]"
+    >
       <Link className='z-40' href={'/'} aria-label={'home'}>
         <Image
           className='h-7 w-auto md:h-10'
@@ -31,7 +36,8 @@ const Header = () => {
         </nav>
 
         <Link
-          className='ml-7 rounded-md border border-dark-blue px-5 py-2 duration-200 ease-in-out hover:bg-[#F1A501] focus:bg-[#F1A501] lg:ml-14'
+          className='ml-7 rounded-md border border-dark-blue px-5 py-2 duration-200 ease-in-out
+            hover:bg-[#F1A501] focus:bg-[#F1A501] lg:ml-14'
           href={''}
           aria-label='Sign up'
         >

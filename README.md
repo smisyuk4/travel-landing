@@ -16,3 +16,5 @@
 - [npm @svgr/webpack](https://www.npmjs.com/package/@svgr/webpack)
 - [react-svgr.com](https://react-svgr.com/docs/next/)
 - [Automatic class sorting with Prettier](https://tailwindcss.com/docs/editor-setup#automatic-class-sorting-with-prettier)
+- [Break long class names into multiple lines](https://github.com/tailwindlabs/tailwindcss/discussions/7763)
+- [prettier-plugin-classnames](https://www.npmjs.com/package/prettier-plugin-classnames)

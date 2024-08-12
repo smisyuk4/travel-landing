@@ -15,7 +15,12 @@ const Category = () => {
         {CATEGORY.map(({ image, title, description }, idx) => (
           <li
             key={idx}
-            className="hover:after:bottom-30 relative w-[190px] cursor-pointer bg-[#FFFFFF] p-[20px] shadow-slate-300 duration-200 ease-in-out hover:z-10 hover:rounded-[20px] hover:shadow-xl hover:after:absolute hover:after:-left-5 hover:after:-z-10 hover:after:block hover:after:h-[50px] hover:after:w-[50px] hover:after:rounded-br-[10px] hover:after:rounded-tl-[30px] hover:after:bg-[#DF6951] hover:after:content-[''] focus:rounded-[30px]"
+            className="hover:after:bottom-30 relative w-[190px] cursor-pointer bg-[#FFFFFF] p-[20px]
+              shadow-slate-300 duration-200 ease-in-out hover:z-10 hover:rounded-[20px]
+              hover:shadow-xl hover:after:absolute hover:after:-left-5 hover:after:-z-10
+              hover:after:block hover:after:h-[50px] hover:after:w-[50px]
+              hover:after:rounded-br-[10px] hover:after:rounded-tl-[30px]
+              hover:after:bg-[#DF6951] hover:after:content-[''] focus:rounded-[30px]"
           >
             <Image
               src={image?.src}
