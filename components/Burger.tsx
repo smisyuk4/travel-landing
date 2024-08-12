@@ -35,9 +35,9 @@ const Burger = () => {
   return (
     <div className='relative z-40 md:hidden'>
       <button
-        className='block mr-0 ml-auto'
+        className='ml-auto mr-0 block'
         ref={burgerButtonRef}
-        onClick={() => setIsOpenMenu((prev) => !prev)}
+        onClick={() => setIsOpenMenu(prev => !prev)}
       >
         {isOpenMenu ? (
           <CrossIcon className={'h-10 w-10 stroke-black'} />
@@ -47,11 +47,11 @@ const Burger = () => {
       </button>
 
       <div
-        className={`absolute top-10 right-0 flex flex-col items-center p-5 z-50 rounded-bl-[60px] bg-[#FFF1DA] ${
+        className={`absolute right-0 top-10 z-50 flex flex-col items-center rounded-bl-[60px] bg-[#FFF1DA] p-5 ${
           isOpenMenu
             ? 'translate-y-0'
             : '-translate-y-52 translate-x-12 scale-0'
-        } ease-in-out duration-300`}
+        } duration-300 ease-in-out`}
         ref={menuRef}
       >
         <nav>
@@ -62,7 +62,7 @@ const Burger = () => {
                   path={link.path}
                   label={link.title}
                   title={link.title}
-                  onClickFunc={() => setIsOpenMenu((prev) => !prev)}
+                  onClickFunc={() => setIsOpenMenu(prev => !prev)}
                 />
               </li>
             ))}
@@ -70,13 +70,13 @@ const Burger = () => {
         </nav>
 
         <Link
-          className='border border-dark-blue rounded-md py-2 px-4 mt-6 hover:bg-[#F1A501]  focus:bg-[#F1A501] ease-in-out duration-200'
+          className='mt-6 rounded-md border border-dark-blue px-4 py-2 duration-200 ease-in-out hover:bg-[#F1A501] focus:bg-[#F1A501]'
           href={''}
           aria-label='Sign up'
         >
           Sign up
         </Link>
-        <Link className='flex gap-1 mt-6' href={''} aria-label='toggle lang'>
+        <Link className='mt-6 flex gap-1' href={''} aria-label='toggle lang'>
           EN
           <ArrowToBottomIcon className={'h-4 w-4 stroke-black'} />
         </Link>

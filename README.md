@@ -15,3 +15,4 @@
 - [responsive-design](https://tailwindcss.com/docs/responsive-design)
 - [npm @svgr/webpack](https://www.npmjs.com/package/@svgr/webpack)
 - [react-svgr.com](https://react-svgr.com/docs/next/)
+- [Automatic class sorting with Prettier](https://tailwindcss.com/docs/editor-setup#automatic-class-sorting-with-prettier)
