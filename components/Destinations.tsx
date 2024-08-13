@@ -1,18 +1,18 @@
-import { CATEGORY } from '@/constants/category';
+import { NavigationIcon } from '@/assets/icons';
+import { DESTINATIONS } from '@/constants/destinations';
 import Image from 'next/image';
 
-const Category = () => {
+const Destinations = () => {
   return (
     <section className='bg-[#FFFFFF] py-[60px]'>
       <h3 className='mb-[10px] text-center text-[18px] font-semibold text-[#5E6282]'>
-        CATEGORY
+        Top Selling
       </h3>
       <h2 className='mb-[70px] text-center text-[50px] font-bold text-[#14183E]'>
-        We Offer Best Services
+        Top Destinations
       </h2>
-
       <ul className='flex justify-center gap-[90px]'>
-        {CATEGORY.map(({ image, title, description }, idx) => (
+        {DESTINATIONS.map(({ image, destination, cost, duration }, idx) => (
           <li
             key={idx}
             className='relative w-[190px] cursor-pointer bg-[#FFFFFF] p-[20px] shadow-slate-300
@@ -20,17 +20,17 @@ const Category = () => {
               focus:rounded-[30px]'
           >
             <Image
-              src={image?.src}
-              width={100}
-              height={100}
-              alt='icon category'
-              className='mx-auto mb-[30px] h-[100px] w-auto object-contain'
+              className='object-cover'
+              src={image.src}
+              alt={destination}
+              height={200}
+              width={200}
             />
-            <h4 className='mb-[15px] text-center text-[20px] text-[#1E1D4C]'>
-              {title}
-            </h4>
-            <p className='text-center text-[16px] text-[#5E6282]'>
-              {description}
+            <h4>{destination}</h4>
+            <p>{`$${cost}`}</p>
+            <p>
+              <NavigationIcon className={'h-4 w-4 stroke-black'} />
+              {`${duration} Days Trip`}
             </p>
           </li>
         ))}
@@ -39,4 +39,4 @@ const Category = () => {
   );
 };
 
-export default Category;
+export default Destinations;
