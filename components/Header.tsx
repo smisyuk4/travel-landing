@@ -35,22 +35,17 @@ const Header = () => {
           </ul>
         </nav>
 
-        <Link
-          className='ml-7 rounded-md border border-dark-blue px-5 py-2 duration-200 ease-in-out
-            hover:bg-[#F1A501] focus:bg-[#F1A501] lg:ml-14'
-          href={''}
-          aria-label='Sign up'
-        >
+        <Link className='auth-button' href={''} aria-label='Sign up'>
           Sign up
         </Link>
-        <Link
+        {/*<Link
           className='ml-7 flex gap-1 lg:ml-14'
           href={''}
           aria-label='toggle lang'
         >
           EN
           <ArrowToBottomIcon className={'h-4 w-4 stroke-black'} />
-        </Link>
+        </Link>*/}
       </div>
 
       <Burger />
