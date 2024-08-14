@@ -1,14 +1,15 @@
 import Image from 'next/image';
 
+import SectionTitle from './SectionTitle';
+
 const Booking = () => {
   return (
-    <section className='bg-[#FFFFFF] py-[60px]'>
-      <h3 className='mb-[10px] text-center text-[18px] font-semibold text-[#5E6282]'>
-        Easy and Fast
-      </h3>
-      <h2 className='mb-[70px] text-center text-[50px] font-bold text-[#14183E]'>
-        Book your next trip in 3 easy steps
-      </h2>
+    <section className='container mx-auto section'>
+      <SectionTitle
+        title='Easy and Fast'
+        subTitle='Book your next trip in 3 easy steps'
+        align='right'
+      />
 
       <ul>
         <li>
