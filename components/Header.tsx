@@ -10,8 +10,8 @@ import { ArrowToBottomIcon } from '@/assets/icons';
 const Header = () => {
   return (
     <header
-      className="mt-4 flex items-center justify-between after:absolute after:right-0 after:top-0
-        after:block after:h-[550px] after:w-[300px]
+      className="container mx-auto mt-4 flex items-center justify-between after:absolute
+        after:right-0 after:top-0 after:block after:h-[550px] after:w-[300px]
         after:bg-[url('../assets/header-decore.svg')] after:content-['']
         sm:after:h-[700px] sm:after:w-[550px] md:mt-14 md:after:w-[700px]"
     >

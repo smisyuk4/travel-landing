@@ -1,15 +1,12 @@
-import { CATEGORY } from '@/constants/category';
 import Image from 'next/image';
+
+import { CATEGORY } from '@/constants/category';
+import SectionTitle from './SectionTitle';
 
 const Category = () => {
   return (
     <section className='bg-[#FFFFFF] py-[60px]'>
-      <h3 className='mb-[10px] text-center text-[18px] font-semibold text-[#5E6282]'>
-        CATEGORY
-      </h3>
-      <h2 className='mb-[70px] text-center text-[50px] font-bold text-[#14183E]'>
-        We Offer Best Services
-      </h2>
+      <SectionTitle title='Category' subTitle='We Offer Best Services' />
 
       <ul className='flex justify-center gap-[90px]'>
         {CATEGORY.map(({ image, title, description }, idx) => (

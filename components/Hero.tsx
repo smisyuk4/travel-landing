@@ -2,7 +2,7 @@ import { PlayButtonIcon } from '@/assets/icons';
 
 export const Hero = () => {
   return (
-    <section className='custom-lg-height flex w-full items-center justify-between'>
+    <section className='container mx-auto custom-lg-height flex w-full items-center justify-between'>
       <div className='lg:w-[650px]'>
         <h2 className='font-bold text-accent-800 lg:mb-[24px] lg:text-xl'>
           Best Destinations around the world
