@@ -18,7 +18,10 @@ const config: Config = {
         //'header-decore': "url('../public/header-decore.svg')",
       },
       colors: {
-        accent: '#52a3b1',
+        accent: {
+          100: '#2c7e8d',
+          800: '#52a3b1',
+        },
         second: '#93d1a4',
         'custom-bg-color': {
           100: '#e9e5cb',
