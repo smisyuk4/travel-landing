@@ -1,16 +1,14 @@
+import Image from 'next/image';
+
 import { NavigationIcon } from '@/assets/icons';
 import { DESTINATIONS } from '@/constants/destinations';
-import Image from 'next/image';
+import SectionTitle from './SectionTitle';
 
 const Destinations = () => {
   return (
-    <section className='bg-[#FFFFFF] py-[60px]'>
-      <h3 className='mb-[10px] text-center text-[18px] font-semibold text-[#5E6282]'>
-        Top Selling
-      </h3>
-      <h2 className='mb-[70px] text-center text-[50px] font-bold text-[#14183E]'>
-        Top Destinations
-      </h2>
+    <section className='bg-custom-bg-color-100 section'>
+      <SectionTitle title='Top Selling' subTitle='Top Destinations' />
+
       <ul className='flex justify-center gap-[90px]'>
         {DESTINATIONS.map(({ image, destination, cost, duration }, idx) => (
           <li
@@ -30,13 +28,15 @@ const Destinations = () => {
                 w-full rounded-b-[20px]'
             >
               <div className='flex justify-between'>
-                <h4 className='text-[#5E6282] text-[18px] mb-[15px] font-bold'>
+                <h4 className='text-custom-text-color-400 text-lg mb-[15px] font-bold'>
                   {destination}
                 </h4>
-                <p className='text-[#5E6282] text-[18px]'>{`$ ${cost}`}</p>
+                <p className='text-custom-text-color-400 text-lg'>{`$ ${cost}`}</p>
               </div>
-              <p className='flex gap-[8px] items-center'>
-                <NavigationIcon className={'h-4 w-4 stroke-black'} />
+              <p className='flex gap-3 items-center text-custom-text-color-800'>
+                <NavigationIcon
+                  className={'h-4 w-4 stroke-custom-text-color-800'}
+                />
                 {`${duration} Days Trip`}
               </p>
             </div>

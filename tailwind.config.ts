@@ -24,8 +24,9 @@ const config: Config = {
         },
         second: '#93d1a4',
         'custom-bg-color': {
-          100: '#e9e5cb',
-          200: '#d1ddb9',
+          100: '#FFFFFF',
+          200: '#e9e5cb',
+          300: '#d1ddb9',
         },
         'custom-text-color': {
           100: '#FFFFFF',

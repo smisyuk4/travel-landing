@@ -5,7 +5,7 @@ import SectionTitle from './SectionTitle';
 
 const Category = () => {
   return (
-    <section className='bg-[#FFFFFF] py-[60px]'>
+    <section className='bg-custom-bg-color-100 section'>
       <SectionTitle title='Category' subTitle='We Offer Best Services' />
 
       <ul className='flex justify-center gap-[90px]'>
@@ -23,10 +23,10 @@ const Category = () => {
               alt='icon category'
               className='mx-auto mb-[30px] h-[100px] w-auto object-contain'
             />
-            <h4 className='mb-[15px] text-center text-[20px] text-[#1E1D4C]'>
+            <h4 className='mb-[15px] font-bold text-center text-xl text-custom-text-color-800'>
               {title}
             </h4>
-            <p className='text-center text-[16px] text-[#5E6282]'>
+            <p className='text-center text-lg text-custom-text-color-400'>
               {description}
             </p>
           </li>
