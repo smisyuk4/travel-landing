@@ -13,7 +13,7 @@ const Destinations = () => {
         {DESTINATIONS.map(({ image, destination, cost, duration }, idx) => (
           <li
             key={idx}
-            className='relative w-[314px] cursor-pointer bg-[#FFFFFF] pb-[20px] shadow-slate-300
+            className='relative w-[300px] cursor-pointer bg-custom-bg-color-100 shadow-slate-300
               duration-200 ease-in-out rounded-[20px] shadow-lg'
           >
             <Image
@@ -24,8 +24,8 @@ const Destinations = () => {
               width={350}
             />
             <div
-              className='flex-col py-[17px] px-[20px] h-[100px] absolute bottom-[-15px] bg-[#FFFFFF]
-                w-full rounded-b-[20px]'
+              className='flex-col py-[17px] px-[20px] h-[100px] absolute bg-custom-bg-color-100 w-full
+                bottom-0 rounded-b-[20px]'
             >
               <div className='flex justify-between'>
                 <h4 className='text-custom-text-color-400 text-lg mb-[15px] font-bold'>
