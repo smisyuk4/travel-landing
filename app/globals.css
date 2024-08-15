@@ -31,6 +31,10 @@ body {
     @apply bg-accent-800 hover:bg-accent-100 focus:bg-accent-100 mr-5 flex h-[52px] w-[52px] items-center justify-center rounded-full duration-200 ease-in-out;
   }
 
+  .booking-card-button {
+    @apply bg-custom-bg-color-300 flex h-10 w-10 items-center justify-center rounded-full duration-200 ease-in-out hover:bg-custom-bg-color-200 focus:bg-custom-bg-color-200;
+  }
+
   .section {
     @apply py-10;
   }

@@ -14,7 +14,7 @@ const Destinations = () => {
           <li
             key={idx}
             className='relative w-[300px] cursor-pointer bg-custom-bg-color-100 shadow-slate-300
-              duration-200 ease-in-out rounded-[20px] shadow-lg'
+              duration-200 ease-in-out rounded-[20px] drop-shadow-lg'
           >
             <Image
               className='object-cover w-full rounded-[20px]'
