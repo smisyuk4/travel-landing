@@ -39,3 +39,8 @@ body {
     @apply py-10;
   }
 }
+
+.swiper {
+  width: 600px;
+  height: 300px;
+}

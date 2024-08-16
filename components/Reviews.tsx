@@ -2,6 +2,7 @@ import Image from 'next/image';
 
 import SectionTitle from './SectionTitle';
 import { REVIEWS } from '@/constants/reviews';
+import Carousel from './Carousel';
 
 const Reviews = () => {
   return (
@@ -16,26 +17,7 @@ const Reviews = () => {
             />
           </div>
 
-          <ul className='flex flex-col gap-12'>
-            {REVIEWS.map(({ image, review, name, location }, idx) => (
-              <li className='flex gap-5 w-[500px] h-[200px]' key={idx}>
-                <Image
-                  className='h-20 w-20 rounded-full'
-                  src={image}
-                  height={100}
-                  width={100}
-                  alt='avatar'
-                />
-                <div className='overflow-scroll'>
-                  <p className='mb-3'>{review}</p>
-                  <p className='font-bold text-lg mb-1'>{name}</p>
-                  <p className='text-custom-text-color-400 text-sm'>
-                    {location}
-                  </p>
-                </div>
-              </li>
-            ))}
-          </ul>
+          <Carousel data={REVIEWS} />
         </div>
       </div>
     </section>
