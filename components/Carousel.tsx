@@ -18,14 +18,19 @@ const settings = {
   speed: 500,
   slidesToShow: 1,
   slidesToScroll: 1,
+  slide: 'li',
+  className: 'w-[700px]',
 };
 
 const Carousel = ({ data }) => {
   return (
-    <Slider {...settings}>
-      <ul className='flex flex-col gap-12'>
+    <ul className='sliderWrapper'>
+      <Slider {...settings}>
         {data.map(({ image, review, name, location }, idx) => (
-          <li className='flex gap-5 w-[500px] h-[200px]' key={idx}>
+          <li
+            //className='sliderWrapper flex gap-5 w-[500px] h-[200px]'
+            key={idx}
+          >
             <Image
               className='h-20 w-20 rounded-full'
               src={image}
@@ -40,8 +45,8 @@ const Carousel = ({ data }) => {
             </div>
           </li>
         ))}
-      </ul>
-    </Slider>
+      </Slider>
+    </ul>
   );
 };
 

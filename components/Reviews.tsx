@@ -1,5 +1,3 @@
-import Image from 'next/image';
-
 import SectionTitle from './SectionTitle';
 import { REVIEWS } from '@/constants/reviews';
 import Carousel from './Carousel';

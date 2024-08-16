@@ -38,9 +38,12 @@ body {
   .section {
     @apply py-10;
   }
-}
 
-.swiper {
-  width: 600px;
-  height: 300px;
+  .sliderWrapper :global .slick-list .slick-track {
+    @apply mx-[20] my-[0];
+  }
+
+  .sliderWrapper .slick-slide li {
+    @apply bg-custom-bg-color-300 flex h-[300px] w-[700px] flex-row gap-5 overflow-x-scroll p-5;
+  }
 }

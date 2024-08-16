@@ -22,3 +22,4 @@
 ## Others
 
 - [react-slick](https://www.npmjs.com/package/react-slick)
+- [Manipulating React Slick classes with Tailwind CSS](https://stackoverflow.com/questions/74974197/manipulating-react-slick-classes-with-tailwind-css)
