@@ -35,10 +35,10 @@ const Booking = () => {
         >
           <Image
             src={whiteBuildings.src}
-            height={400}
+            height={300}
             width={400}
             alt='white buildings'
-            className='rounded-[14px] mx-auto mb-4'
+            className='rounded-[14px] mx-auto mb-4 max-w-full h-[300px]'
           />
           <h4 className='font-bold text-center text-lg mb-3'>Trip To Greece</h4>
           <p className='text-custom-text-color-400 text-sm text-center mb-4'>

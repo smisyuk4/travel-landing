@@ -22,7 +22,7 @@ const Category = () => {
                 width={100}
                 height={100}
                 alt='icon category'
-                className='mx-auto mb-[30px] h-[100px] w-auto object-contain'
+                className='mx-auto mb-[30px] h-[100px] w-[100px] object-contain'
               />
               <h4 className='mb-[15px] font-bold text-center text-xl text-custom-text-color-800'>
                 {title}

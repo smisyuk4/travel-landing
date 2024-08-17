@@ -25,11 +25,11 @@ export const Hero = () => {
           >
             Find out more
           </button>*/}
-          <div className='flex items-center relative'>
+          <div className='flex items-center'>
             <button className='play-demo-button' type='button'>
               <PlayButtonIcon className={'h-5 w-5'} />
             </button>
-            <p className='image-bg text-base font-medium text-custom-text-color-400'>
+            <p className='text-base font-medium text-custom-text-color-400'>
               Play Demo
             </p>
           </div>

@@ -18,7 +18,7 @@ const settings = {
   slidesToShow: 1,
   slidesToScroll: 1,
   autoplay: true,
-  autoplaySpeed: 2000,
+  autoplaySpeed: 4000,
   pauseOnHover: true,
   slide: 'li',
   className: 'w-[700px]',
@@ -26,12 +26,12 @@ const settings = {
 
 const Carousel = ({ data }) => {
   return (
-    <ul className='sliderWrapper'>
+    <ul className='slider-wrapper'>
       <Slider {...settings}>
         {data.map(({ image, review, name, location }, idx) => (
-          <li className='slide relative' key={idx}>
+          <li className='slide' key={idx}>
             <Image
-              className='image-bg h-20 w-20 rounded-full'
+              className='border-2 border-custom-text-color-800 h-20 w-20 rounded-full'
               src={image}
               height={100}
               width={100}
