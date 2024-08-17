@@ -7,7 +7,7 @@ import { SendIcon, MapIcon, BuildingIcon, LeafIcon } from '@/assets/icons';
 
 const Booking = () => {
   return (
-    <section className='container mx-auto section flex justify-between'>
+    <section className='container mx-auto section flex justify-between relative'>
       <div className='w-[450px]'>
         <SectionTitle
           title='Easy and Fast'
@@ -28,7 +28,7 @@ const Booking = () => {
         </ul>
       </div>
 
-      <div className='flex flex-col items-center justify-center'>
+      <div className='flex flex-col items-center justify-center custom-bg-round-gradient'>
         <div
           className='bg-custom-bg-color-100 p-6 rounded-[20px] drop-shadow-lg
             shadow-custom-bg-color-300'
