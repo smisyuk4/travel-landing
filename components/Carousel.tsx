@@ -15,9 +15,11 @@ import 'slick-carousel/slick/slick-theme.css';
 const settings = {
   dots: true,
   infinite: true,
-  speed: 500,
   slidesToShow: 1,
   slidesToScroll: 1,
+  autoplay: true,
+  autoplaySpeed: 2000,
+  pauseOnHover: true,
   slide: 'li',
   className: 'w-[700px]',
 };
@@ -27,12 +29,9 @@ const Carousel = ({ data }) => {
     <ul className='sliderWrapper'>
       <Slider {...settings}>
         {data.map(({ image, review, name, location }, idx) => (
-          <li
-            //className='sliderWrapper flex gap-5 w-[500px] h-[200px]'
-            key={idx}
-          >
+          <li className='slide relative' key={idx}>
             <Image
-              className='h-20 w-20 rounded-full'
+              className='image-bg h-20 w-20 rounded-full'
               src={image}
               height={100}
               width={100}

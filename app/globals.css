@@ -39,11 +39,19 @@ body {
     @apply py-10;
   }
 
-  .sliderWrapper :global .slick-list .slick-track {
-    @apply mx-[20] my-[0];
+  .sliderWrapper .slick-slide div {
+    @apply mx-7;
   }
 
   .sliderWrapper .slick-slide li {
-    @apply bg-custom-bg-color-300 flex h-[300px] w-[700px] flex-row gap-5 overflow-x-scroll p-5;
+    @apply bg-custom-bg-color-300 h-[200px] w-[700px] overflow-x-scroll rounded-[20px] p-5;
   }
+
+  .image-bg {
+    @apply after:absolute after:left-2 after:top-2 after:h-20 after:w-20 after:rounded-full after:bg-red-600 after:content-[''];
+  }
+}
+
+.slide {
+  display: flex !important;
 }
