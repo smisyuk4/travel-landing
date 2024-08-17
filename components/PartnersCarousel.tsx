@@ -13,35 +13,30 @@ import 'slick-carousel/slick/slick-theme.css';
 
 //interface Props extends Array<ArrayItem> {}
 const settings = {
-  dots: true,
+  dots: false,
   infinite: true,
-  slidesToShow: 1,
+  slidesToShow: 4,
   slidesToScroll: 1,
   autoplay: true,
   autoplaySpeed: 4000,
   pauseOnHover: true,
   slide: 'li',
-  className: 'w-[700px]',
+  className: 'w-full mx-auto',
 };
 
-const Carousel = ({ data }) => {
+const PartnersCarousel = ({ data }) => {
   return (
-    <ul className='slider-wrapper'>
+    <ul className='partners-slider'>
       <Slider {...settings}>
-        {data.map(({ image, review, name, location }, idx) => (
+        {data.map(({ image, label }, idx) => (
           <li className='slide' key={idx}>
             <Image
-              className='border-2 border-custom-text-color-800 h-20 w-20 rounded-full'
+              className=''
               src={image}
-              height={100}
-              width={100}
-              alt='avatar'
+              height={150}
+              width={150}
+              alt={label}
             />
-            <div className='overflow-scroll'>
-              <p className='mb-3'>{review}</p>
-              <p className='font-bold text-lg mb-1'>{name}</p>
-              <p className='text-custom-text-color-400 text-sm'>{location}</p>
-            </div>
           </li>
         ))}
       </Slider>
@@ -49,4 +44,4 @@ const Carousel = ({ data }) => {
   );
 };
 
-export default Carousel;
+export default PartnersCarousel;

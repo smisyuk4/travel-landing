@@ -43,12 +43,17 @@ body {
     @apply py-10;
   }
 
-  .slider-wrapper .slick-slide div {
+  .reviews-slider .slick-slide div,
+  .partners-slider .slick-slide div {
     @apply mx-7;
   }
 
-  .slider-wrapper .slick-slide li {
+  .reviews-slider .slick-slide li {
     @apply bg-custom-bg-color-300 h-[200px] w-[700px] overflow-x-scroll rounded-[20px] p-5;
+  }
+
+  .partners-slider .slick-slide li {
+    @apply flex h-24 items-center justify-center;
   }
 }
 

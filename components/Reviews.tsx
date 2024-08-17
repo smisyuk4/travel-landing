@@ -1,6 +1,6 @@
 import SectionTitle from './SectionTitle';
 import { REVIEWS } from '@/constants/reviews';
-import Carousel from './Carousel';
+import ReviewsCarousel from './ReviewsCarousel';
 
 const Reviews = () => {
   return (
@@ -15,7 +15,7 @@ const Reviews = () => {
             />
           </div>
 
-          <Carousel data={REVIEWS} />
+          <ReviewsCarousel data={REVIEWS} />
         </div>
       </div>
     </section>
