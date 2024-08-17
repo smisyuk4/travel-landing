@@ -7,3 +7,4 @@ export { default as BuildingIcon } from './building.svg';
 export { default as LeafIcon } from './leaf.svg';
 export { default as MapIcon } from './map.svg';
 export { default as SendIcon } from './send.svg';
+export { default as EmailIcon } from './email.svg';

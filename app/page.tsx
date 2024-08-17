@@ -4,6 +4,7 @@ import Destinations from '@/components/Destinations';
 import Booking from '@/components/Booking';
 import Reviews from '@/components/Reviews';
 import Partners from '@/components/Partners';
+import Subscribe from '@/components/Subscribe';
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <Booking />
       <Reviews />
       <Partners />
+      <Subscribe />
     </>
   );
 };
