@@ -59,8 +59,16 @@ body {
   .footer-nav-title {
     @apply mb-2 text-xl font-bold;
   }
+
+  .subscribe-button {
+    @apply border-accent-800 hover:bg-accent-800 focus:bg-accent-100 ml-7 rounded-md border bg-custom-bg-color-100 px-5 py-2 text-lg duration-200 ease-in-out hover:text-custom-text-color-100 focus:text-custom-text-color-100 lg:ml-14;
+  }
 }
 
 .slide {
   display: flex !important;
+}
+
+.fontAwesome {
+  font-family: Helvetica, 'FontAwesome', sans-serif;
 }
