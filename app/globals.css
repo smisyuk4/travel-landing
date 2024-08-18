@@ -55,6 +55,10 @@ body {
   .partners-slider .slick-slide li {
     @apply flex h-24 items-center justify-center;
   }
+
+  .footer-nav-title {
+    @apply mb-2 text-xl font-bold;
+  }
 }
 
 .slide {
