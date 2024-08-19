@@ -7,7 +7,10 @@ import { SendIcon, MapIcon, BuildingIcon, LeafIcon } from '@/assets/icons';
 
 const Booking = () => {
   return (
-    <section className='container mx-auto section flex justify-between relative'>
+    <section
+      className='container mx-auto section flex justify-between relative'
+      id='booking'
+    >
       <div className='w-[450px]'>
         <SectionTitle
           title='Easy and Fast'

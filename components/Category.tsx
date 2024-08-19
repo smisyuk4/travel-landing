@@ -5,7 +5,7 @@ import SectionTitle from './SectionTitle';
 
 const Category = () => {
   return (
-    <section className='bg-custom-bg-color-100 section'>
+    <section className='bg-custom-bg-color-100 section' id='category'>
       <div className='container mx-auto'>
         <SectionTitle title='Category' subTitle='We Offer Best Services' />
 

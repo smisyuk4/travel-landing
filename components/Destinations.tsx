@@ -6,7 +6,7 @@ import SectionTitle from './SectionTitle';
 
 const Destinations = () => {
   return (
-    <section className='bg-custom-bg-color-100 section'>
+    <section className='bg-custom-bg-color-100 section' id='destinations'>
       <SectionTitle title='Top Selling' subTitle='Top Destinations' />
 
       <ul className='flex justify-center gap-[90px]'>
