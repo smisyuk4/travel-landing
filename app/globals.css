@@ -68,7 +68,3 @@ body {
 .slide {
   display: flex !important;
 }
-
-.fontAwesome {
-  font-family: Helvetica, 'FontAwesome', sans-serif;
-}
