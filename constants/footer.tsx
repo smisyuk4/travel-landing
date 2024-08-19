@@ -4,15 +4,11 @@ export const FOOTER_LINKS = {
     links: [
       {
         label: 'About',
-        path: 'about',
+        path: '/about',
       },
       {
         label: 'Careers',
-        path: 'careers',
-      },
-      {
-        label: 'Mobile',
-        path: 'mobile',
+        path: '/careers',
       },
     ],
   },
@@ -22,15 +18,11 @@ export const FOOTER_LINKS = {
     links: [
       {
         label: 'Help/FAQ',
-        path: 'help-faq',
-      },
-      {
-        label: 'Press',
-        path: 'press',
+        path: '/help-faq',
       },
       {
         label: 'Affiliates',
-        path: 'affiliates',
+        path: '/affiliates',
       },
     ],
   },

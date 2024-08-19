@@ -4,7 +4,10 @@ import ReviewsCarousel from './ReviewsCarousel';
 
 const Reviews = () => {
   return (
-    <section className='section flex justify-between bg-custom-bg-color-100'>
+    <section
+      className='section flex justify-between bg-custom-bg-color-100'
+      id='reviews'
+    >
       <div className='container mx-auto'>
         <div className='flex justify-between'>
           <div className='w-[450px]'>
