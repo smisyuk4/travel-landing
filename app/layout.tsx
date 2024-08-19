@@ -19,10 +19,10 @@ const RootLayout = ({
 }>) => {
   return (
     <html lang='en'>
-      <body className={`${inter.className} container mx-auto`}>
+      <body className={`${inter.className}`}>
         <Header />
         <main className='relative overflow-hidden'>{children}</main>
-        {/*<Footer />*/}
+        <Footer />
       </body>
     </html>
   );

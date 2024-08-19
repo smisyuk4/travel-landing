@@ -18,8 +18,21 @@ const config: Config = {
         //'header-decore': "url('../public/header-decore.svg')",
       },
       colors: {
-        'dark-blue': '#212832',
-        'brand-red': '#DF6951',
+        accent: {
+          100: '#2c7e8d',
+          800: '#52a3b1',
+        },
+        second: '#93d1a4',
+        'custom-bg-color': {
+          100: '#FFFFFF',
+          200: '#e9e5cb',
+          300: '#d1ddb9',
+        },
+        'custom-text-color': {
+          100: '#FFFFFF',
+          400: '#4b414b',
+          800: '#000000',
+        },
       },
     },
   },

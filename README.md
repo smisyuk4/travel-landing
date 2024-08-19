@@ -18,3 +18,10 @@
 - [Automatic class sorting with Prettier](https://tailwindcss.com/docs/editor-setup#automatic-class-sorting-with-prettier)
 - [Break long class names into multiple lines](https://github.com/tailwindlabs/tailwindcss/discussions/7763)
 - [prettier-plugin-classnames](https://www.npmjs.com/package/prettier-plugin-classnames)
+- [input](https://stackoverflow.com/questions/65290928/tailwind-show-placeholder-on-border-of-input-when-focused)
+
+## Others
+
+- [react-slick](https://www.npmjs.com/package/react-slick)
+- [Manipulating React Slick classes with Tailwind CSS](https://stackoverflow.com/questions/74974197/manipulating-react-slick-classes-with-tailwind-css)
+- [icons fontawesome](https://fontawesome.com/v4/cheatsheet/)

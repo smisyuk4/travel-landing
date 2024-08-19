@@ -1,13 +1,15 @@
 import Link from 'next/link';
 
-const NavLink = ({ path, label, title, onClickFunc = undefined }) => {
+interface Props {
+  path: string;
+  label: string;
+  title: string;
+  onClick?: () => void;
+}
+
+const NavLink = ({ path, label, title, onClick }: Props) => {
   return (
-    <Link
-      className='duration-200 ease-in-out hover:text-[#F1A501] focus:text-[#F1A501]'
-      href={path}
-      aria-label={label}
-      onClick={onClickFunc}
-    >
+    <Link className='hav-link' href={path} aria-label={label} onClick={onClick}>
       {title}
     </Link>
   );
