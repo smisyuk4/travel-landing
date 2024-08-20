@@ -27,15 +27,19 @@ const Header = () => {
       <div className='z-50 hidden items-center md:flex'>
         <nav>
           <ul className='flex gap-7 lg:gap-14'>
-            {NAV_LINKS.map(({ path, title }, idx) => (
+            {NAV_LINKS.map(({ href, title }, idx) => (
               <li key={idx}>
-                <NavLink path={path} label={title} title={title} />
+                <NavLink href={href} label={title} title={title} />
               </li>
             ))}
           </ul>
         </nav>
 
-        <Link className='auth-button' href={''} aria-label='Sign up'>
+        <Link
+          className='main-button ml-7 lg:ml-14 h-[40px]'
+          href={''}
+          aria-label='Sign up'
+        >
           Sign up
         </Link>
         {/*<Link

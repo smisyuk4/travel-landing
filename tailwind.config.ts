@@ -13,26 +13,26 @@ const config: Config = {
       },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
-        'gradient-conic':
-          'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
-        //'header-decore': "url('../public/header-decore.svg')",
       },
       colors: {
         accent: {
-          100: '#2c7e8d',
-          800: '#52a3b1',
+          100: '#B30013',
+          800: '#b34700',
         },
-        second: '#93d1a4',
+        second: '#006CB3',
         'custom-bg-color': {
           100: '#FFFFFF',
-          200: '#e9e5cb',
-          300: '#d1ddb9',
+          200: '#fff7c2',
+          300: '#E8FFC2',
         },
         'custom-text-color': {
           100: '#FFFFFF',
           400: '#4b414b',
           800: '#000000',
         },
+      },
+      screens: {
+        'small-mobile': '480px',
       },
     },
   },
