@@ -2,8 +2,11 @@ import { PlayButtonIcon } from '@/assets/icons';
 
 export const Hero = () => {
   return (
-    <section className='container mx-auto custom-lg-height flex w-full items-center justify-between'>
-      <div className='small-mobile:w-[380px] md:w-[620px] lg:w-[650px]'>
+    <section
+      className='container mx-auto custom-lg-height flex w-full items-center justify-between
+        small-mobile:items-start small-mobile:pt-20'
+    >
+      <div className='small-mobile:w-[380px] md:w-[620px] lg:w-[650px] z-20'>
         <h2 className='font-bold text-accent-800 text-sm md:text-lg lg:mb-7 md:mb-5 mb-3 lg:text-xl'>
           Best Destinations around the world
         </h2>
@@ -15,7 +18,7 @@ export const Hero = () => {
         </h1>
         <p
           className='font-medium text-custom-text-color-400 text-sm md:text-lg mb-6 lg:mb-8
-            lg:w-[477px]'
+            md:w-[500px] lg:w-auto lg:w-[477px]'
         >
           Built Wicket longer admire do barton vanity itself do in it. Preferred
           to sportsmen it engrossed listening. Park gate sell they west hard for
@@ -41,7 +44,11 @@ export const Hero = () => {
         </div>
       </div>
 
-      {/*<div className="h-[80%] w-[40%] bg-[url('../assets/girl.png')] bg-contain bg-no-repeat"></div>*/}
+      <div
+        className="hidden small-mobile:block small-mobile:h-[400px] small-mobile:w-[350px]
+          small-mobile:absolute small-mobile:bottom-0 small-mobile:right-0 lg:h-[80%]
+          lg:w-[40%] bg-[url('../assets/girl.png')] bg-contain bg-no-repeat z-10"
+      ></div>
     </section>
   );
 };

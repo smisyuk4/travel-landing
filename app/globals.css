@@ -12,7 +12,6 @@ body {
 
 @layer components {
   .custom-lg-height {
-    /*@apply h-[calc(100dvh-42px-56px)];*/
     @apply h-[calc(100dvh-56px)] md:h-[calc(100dvh-42px-56px)];
   }
 
