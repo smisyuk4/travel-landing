@@ -32,7 +32,7 @@ const SubscribeForm = () => {
           />
         </label>
 
-        <button className='w-[35%] subscribe-button' aria-label='Submit'>
+        <button className='main-button w-[35%]' aria-label='Submit'>
           Subscribe
         </button>
       </form>

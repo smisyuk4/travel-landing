@@ -35,7 +35,7 @@ const Header = () => {
           </ul>
         </nav>
 
-        <Link className='auth-button' href={''} aria-label='Sign up'>
+        <Link className='main-button' href={''} aria-label='Sign up'>
           Sign up
         </Link>
         {/*<Link
