@@ -3,14 +3,20 @@ import { PlayButtonIcon } from '@/assets/icons';
 export const Hero = () => {
   return (
     <section className='container mx-auto custom-lg-height flex w-full items-center justify-between'>
-      <div className='lg:w-[650px]'>
-        <h2 className='font-bold text-accent-800 lg:mb-[24px] lg:text-xl'>
+      <div className='small-mobile:w-[380px] md:w-[620px] lg:w-[650px]'>
+        <h2 className='font-bold text-accent-800 text-sm md:text-lg lg:mb-7 md:mb-5 mb-3 lg:text-xl'>
           Best Destinations around the world
         </h2>
-        <h1 className='relative font-bold leading-none lg:mb-[30px] lg:text-[84px]'>
+        <h1
+          className='relative font-bold leading-none md:mb-6 md:text-[60px] text-[36px] mb-4 lg:mb-8
+            lg:text-[84px]'
+        >
           Travel, enjoy and live a new and full life
         </h1>
-        <p className='text-base font-medium text-custom-text-color-400 lg:mb-[34px] lg:w-[477px]'>
+        <p
+          className='font-medium text-custom-text-color-400 text-sm md:text-lg mb-6 lg:mb-8
+            lg:w-[477px]'
+        >
           Built Wicket longer admire do barton vanity itself do in it. Preferred
           to sportsmen it engrossed listening. Park gate sell they west hard for
           the.
@@ -29,14 +35,14 @@ export const Hero = () => {
             <button className='play-demo-button' type='button'>
               <PlayButtonIcon className={'h-5 w-5'} />
             </button>
-            <p className='text-base font-medium text-custom-text-color-400'>
+            <p className='font-medium text-custom-text-color-400 text-sm md:text-lg'>
               Play Demo
             </p>
           </div>
         </div>
       </div>
 
-      <div className="h-[80%] w-[40%] bg-[url('../assets/girl.png')] bg-contain bg-no-repeat"></div>
+      {/*<div className="h-[80%] w-[40%] bg-[url('../assets/girl.png')] bg-contain bg-no-repeat"></div>*/}
     </section>
   );
 };

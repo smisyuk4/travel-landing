@@ -34,6 +34,9 @@ const config: Config = {
           800: '#000000',
         },
       },
+      screens: {
+        'small-mobile': '480px',
+      },
     },
   },
   plugins: [],
