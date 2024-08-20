@@ -38,6 +38,7 @@ const Burger = () => {
         className='ml-auto mr-0 block'
         ref={burgerButtonRef}
         onClick={() => setIsOpenMenu(prev => !prev)}
+        aria-label='burger menu'
       >
         {isOpenMenu ? (
           <CrossIcon className={'h-10 w-10 stroke-black'} />

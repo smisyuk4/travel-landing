@@ -4,7 +4,7 @@ export const Hero = () => {
   return (
     <section
       className='container mx-auto custom-lg-height flex w-full items-center justify-between
-        small-mobile:items-start small-mobile:pt-20'
+        small-mobile:items-start small-mobile:pt-20 relative'
     >
       <div className='small-mobile:w-[380px] md:w-[620px] lg:w-[650px] z-20'>
         <h2 className='font-bold text-accent-800 text-sm md:text-lg lg:mb-7 md:mb-5 mb-3 lg:text-xl'>
@@ -27,7 +27,11 @@ export const Hero = () => {
 
         <div className='flex gap-[44px]'>
           <div className='flex items-center'>
-            <button className='play-demo-button' type='button'>
+            <button
+              className='play-demo-button'
+              type='button'
+              aria-label='play demo'
+            >
               <PlayButtonIcon className={'h-5 w-5'} />
             </button>
             <p className='font-medium text-custom-text-color-400 text-sm md:text-lg'>
@@ -38,6 +42,7 @@ export const Hero = () => {
           <button
             className='h-[40px] w-[120px] lg:h-[52px] md:w-[170px] main-button'
             type='button'
+            aria-label='find out more'
           >
             Find out more
           </button>
