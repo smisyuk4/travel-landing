@@ -8,7 +8,7 @@ export const Hero = () => {
           Best Destinations around the world
         </h2>
         <h1
-          className='relative font-bold leading-none md:mb-6 md:text-[60px] text-[36px] mb-4 lg:mb-8
+          className='relative font-bold leading-none md:mb-10 md:text-[60px] text-[36px] mb-7
             lg:text-[84px]'
         >
           Travel, enjoy and live a new and full life
@@ -23,14 +23,6 @@ export const Hero = () => {
         </p>
 
         <div className='flex gap-[44px]'>
-          {/*<button
-            className='h-[60px] w-[170px] rounded-lg bg-[#F1A501] text-lg font-medium text-white
-              duration-200 ease-in-out hover:bg-[#b78210] hover:text-dark-blue
-              focus:bg-[#b78210] focus:text-dark-blue'
-            type='button'
-          >
-            Find out more
-          </button>*/}
           <div className='flex items-center'>
             <button className='play-demo-button' type='button'>
               <PlayButtonIcon className={'h-5 w-5'} />
@@ -39,6 +31,13 @@ export const Hero = () => {
               Play Demo
             </p>
           </div>
+
+          <button
+            className='h-[40px] w-[120px] lg:h-[52px] md:w-[170px] main-button'
+            type='button'
+          >
+            Find out more
+          </button>
         </div>
       </div>
 

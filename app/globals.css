@@ -21,7 +21,7 @@ body {
   }
 
   .main-button {
-    @apply bg-accent-800 border-accent-800 hover:bg-accent-100 focus:bg-accent-100 ml-7 rounded-md border px-5 py-2 text-lg text-custom-text-color-100 duration-200 ease-in-out lg:ml-14;
+    @apply bg-accent-800 border-accent-800 hover:bg-accent-100 focus:bg-accent-100 flex items-center justify-center rounded-md border px-3 py-2 text-sm text-custom-text-color-100 duration-200 ease-in-out md:px-5 md:text-lg;
   }
 
   .play-demo-button {
