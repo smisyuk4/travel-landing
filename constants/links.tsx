@@ -1,18 +1,18 @@
 export const NAV_LINKS = [
   {
     title: 'Destinations',
-    path: '/#destinations',
+    href: '/#destinations',
   },
   {
     title: 'Hotels',
-    path: '/hotels',
+    href: '/hotels',
   },
   {
     title: 'Flights',
-    path: 'flights',
+    href: '/flights',
   },
   {
     title: 'Bookings',
-    path: 'bookings',
+    href: '/bookings',
   },
 ];

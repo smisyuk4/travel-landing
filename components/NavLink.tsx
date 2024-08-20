@@ -1,15 +1,24 @@
+'use client';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 interface Props {
-  path: string;
+  href: string;
   label: string;
   title: string;
   onClick?: () => void;
 }
 
-const NavLink = ({ path, label, title, onClick }: Props) => {
+const NavLink = ({ href, label, title, onClick }: Props) => {
+  const path = usePathname();
+
   return (
-    <Link className='hav-link' href={path} aria-label={label} onClick={onClick}>
+    <Link
+      className={`hav-link ${path.startsWith(href) ? 'active' : undefined}`}
+      href={href}
+      aria-label={label}
+      onClick={onClick}
+    >
       {title}
     </Link>
   );

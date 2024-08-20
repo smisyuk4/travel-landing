@@ -16,7 +16,11 @@ body {
   }
 
   .hav-link {
-    @apply focus:text-accent-800 hover:text-accent-800 text-lg duration-200 ease-in-out;
+    @apply focus:text-accent-800 hover:text-accent-800 relative text-lg duration-200 ease-in-out;
+  }
+
+  .active {
+    @apply text-accent-800 after:bg-accent-800 after:absolute after:-bottom-1 after:left-0 after:block after:h-1 after:w-full after:content-[''];
   }
 
   .main-button {

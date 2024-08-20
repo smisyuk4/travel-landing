@@ -18,7 +18,7 @@ export const Hero = () => {
         </h1>
         <p
           className='font-medium text-custom-text-color-400 text-sm md:text-lg mb-6 lg:mb-8
-            md:w-[500px] lg:w-auto lg:w-[477px]'
+            md:w-[500px] lg:w-auto'
         >
           Built Wicket longer admire do barton vanity itself do in it. Preferred
           to sportsmen it engrossed listening. Park gate sell they west hard for

@@ -57,10 +57,10 @@ const Burger = () => {
       >
         <nav>
           <ul className='flex flex-col gap-6'>
-            {NAV_LINKS.map(({ path, title }, idx) => (
+            {NAV_LINKS.map(({ href, title }, idx) => (
               <li key={idx}>
                 <NavLink
-                  path={path}
+                  href={href}
                   label={title}
                   title={title}
                   onClickFunc={() => setIsOpenMenu(prev => !prev)}
