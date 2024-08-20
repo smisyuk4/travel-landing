@@ -7,9 +7,9 @@ import NavLink from './NavLink';
 import { NAV_LINKS } from '@/constants/links';
 
 const Burger = () => {
-  const [isOpenMenu, setIsOpenMenu] = useState(false);
-  const menuRef = useRef(null);
-  const burgerButtonRef = useRef(null);
+  const [isOpenMenu, setIsOpenMenu] = useState<boolean>(false);
+  const menuRef = useRef<HTMLDivElement>(null);
+  const burgerButtonRef = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
     if (!isOpenMenu) {
@@ -22,11 +22,11 @@ const Burger = () => {
     };
   }, [isOpenMenu]);
 
-  const handleDocumentClick = ({ target }) => {
+  const handleDocumentClick = (event: MouseEvent) => {
     if (
       menuRef.current &&
-      !burgerButtonRef.current.contains(target) &&
-      !menuRef.current.contains(target)
+      !burgerButtonRef?.current?.contains(event.target as Node) &&
+      !menuRef.current?.contains(event.target as Node)
     ) {
       setIsOpenMenu(false);
     }

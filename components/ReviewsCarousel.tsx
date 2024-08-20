@@ -1,17 +1,20 @@
 'use client';
 import Image from 'next/image';
+import type { StaticImageData } from 'next/image';
+
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-//interface ArrayItem {
-//  image: string;
-//  review: string;
-//  name: string;
-//  location: string;
-//}
+interface Props {
+  data: {
+    image: StaticImageData;
+    review: string;
+    name: string;
+    location: string;
+  }[];
+}
 
-//interface Props extends Array<ArrayItem> {}
 const settings = {
   dots: true,
   infinite: true,
@@ -24,7 +27,7 @@ const settings = {
   className: 'w-[700px]',
 };
 
-const ReviewsCarousel = ({ data }) => {
+const ReviewsCarousel = ({ data }: Props) => {
   return (
     <ul className='reviews-slider'>
       <Slider {...settings}>

@@ -25,3 +25,4 @@
 - [react-slick](https://www.npmjs.com/package/react-slick)
 - [Manipulating React Slick classes with Tailwind CSS](https://stackoverflow.com/questions/74974197/manipulating-react-slick-classes-with-tailwind-css)
 - [icons fontawesome](https://fontawesome.com/v4/cheatsheet/)
+- [Typescript event types for React](https://dev.to/fatehmohamed14/typescript-event-types-for-react-3epa)

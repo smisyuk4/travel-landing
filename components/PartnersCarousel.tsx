@@ -1,17 +1,15 @@
 'use client';
 import Image from 'next/image';
+import type { StaticImageData } from 'next/image';
+
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 
-//interface ArrayItem {
-//  image: string;
-//  review: string;
-//  name: string;
-//  location: string;
-//}
+interface Props {
+  data: { image: StaticImageData; label: string }[];
+}
 
-//interface Props extends Array<ArrayItem> {}
 const settings = {
   dots: false,
   infinite: true,
@@ -24,7 +22,7 @@ const settings = {
   className: 'w-full mx-auto',
 };
 
-const PartnersCarousel = ({ data }) => {
+const PartnersCarousel = ({ data }: Props) => {
   return (
     <ul className='partners-slider'>
       <Slider {...settings}>
