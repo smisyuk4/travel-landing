@@ -3,7 +3,13 @@ import second from '@/assets/category-icons/Group_49.png';
 import third from '@/assets/category-icons/Group_50.png';
 import firth from '@/assets/category-icons/Group_51.png';
 
-export const CATEGORY = [
+interface CategoryItem {
+  image: { src: string };
+  title: string;
+  description: string;
+}
+
+export const CATEGORY: CategoryItem[] = [
   {
     image: first,
     title: 'Calculated Weather',
