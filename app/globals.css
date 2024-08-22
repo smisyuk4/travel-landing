@@ -35,6 +35,10 @@ body {
     @apply bg-accent-800 hover:bg-accent-100 focus:bg-accent-100 mr-3 flex h-[40px] w-[40px] items-center justify-center rounded-full duration-200 ease-in-out lg:mr-5 lg:h-[52px] lg:w-[52px];
   }
 
+  .category-card {
+    @apply small-mobile:w-[200px] relative cursor-pointer rounded-[20px] bg-custom-bg-color-100 p-5 shadow-slate-300 duration-200 ease-in-out hover:z-10 hover:shadow-xl focus:shadow-xl md:w-[190px] lg:w-[200px];
+  }
+
   .booking-card-button {
     @apply bg-custom-bg-color-300 flex h-10 w-10 items-center justify-center rounded-full duration-200 ease-in-out hover:bg-custom-bg-color-200 focus:bg-custom-bg-color-200;
   }
