@@ -9,7 +9,7 @@ const Destinations = () => {
     <section className='bg-custom-bg-color-100 section' id='destinations'>
       <SectionTitle title='Top Selling' subTitle='Top Destinations' />
 
-      <ul className='flex justify-center gap-[90px]'>
+      <ul className='flex flex-col md:flex-row items-center justify-center md:gap-16 gap-10'>
         {DESTINATIONS.map(({ image, destination, cost, duration }, idx) => (
           <li
             key={idx}

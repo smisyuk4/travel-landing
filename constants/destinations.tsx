@@ -2,7 +2,14 @@ import first from '@/assets/destinations/rome.jpg';
 import second from '@/assets/destinations/london.jpg';
 import third from '@/assets/destinations/europe.jpg';
 
-export const DESTINATIONS = [
+interface DestinationItem {
+  image: { src: string };
+  destination: string;
+  cost: string;
+  duration: number;
+}
+
+export const DESTINATIONS: DestinationItem[] = [
   {
     image: first,
     destination: 'Rome, Italy',
