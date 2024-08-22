@@ -40,7 +40,7 @@ export const Hero = () => {
           </div>
 
           <button
-            className='h-[40px] w-[120px] lg:h-[52px] md:w-[170px] main-button'
+            className='secondary-button h-[40px] w-[120px] lg:h-[52px] md:w-[170px]'
             type='button'
             aria-label='find out more'
           >
