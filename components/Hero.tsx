@@ -24,6 +24,7 @@ export const Hero = () => {
           to sportsmen it engrossed listening. Park gate sell they west hard for
           the.
         </p>
+        <p>{process.env.MY_FIRST_ENV_VAR}</p>
 
         <div className='flex gap-[44px]'>
           <div className='flex items-center'>
